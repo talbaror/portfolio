@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,7 +40,7 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <img class="navbar-brand" src="{% 'jobs/TalB.jpg'}%" alt="logo">
+                <img class="navbar-brand rounded-circle img-fluid" height="50" width="50" src="{% static 'TalB.jpg' %}" alt="logo">
             <a class="navbar-brand" href="#">Tal Bar-Or</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -47,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link " href="#">LinkedIn</a>
-                <a class="nav-item nav-link" href="#">Resume</a>
+                <a class="nav-item nav-link" href="{% static 'Profile_cv.pdf' %}">Resume</a>
                 <a class="nav-item nav-link" href="#">Blog</a>
                 
               </div>
