@@ -41,15 +41,15 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <img class="navbar-brand rounded-circle img-fluid" height="50" width="50" src="{% static 'TalB.jpg' %}" alt="logo">
-            <a class="navbar-brand" href="#">Tal Bar-Or</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Tal Bar-Or</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link " href="#">LinkedIn</a>
+                <a class="nav-item nav-link " href="https://www.linkedin.com/in/tal-bar-or-0371986/">LinkedIn</a>
                 <a class="nav-item nav-link" href="{% static 'Profile_cv.pdf' %}">Resume</a>
-                <a class="nav-item nav-link" href="#">Blog</a>
+                <a class="nav-item nav-link" href="{% url 'allblogs'%}">Blog</a>
                 
               </div>
             </div>
@@ -83,7 +83,8 @@
               <p class="card-text">{{ job.summary }}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                  
                 </div>
               </div>
             </div>
